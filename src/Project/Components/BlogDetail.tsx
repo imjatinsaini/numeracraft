@@ -1,6 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Header from './Header';
 import Footer from './Footer';
 
 const blogs = [
