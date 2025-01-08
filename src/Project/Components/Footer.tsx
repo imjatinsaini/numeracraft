@@ -259,7 +259,7 @@ const Footer: React.FC = () => {
                 <LinkedIn />
               </a>
               <a
-                href="https://wa.me/7880652040"
+                href="https://wa.me/8556966753"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"

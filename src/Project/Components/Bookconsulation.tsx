@@ -111,6 +111,7 @@ const Bookconsulation: React.FC = () => {
 
     // Construct the WhatsApp message
     const whatsappMessage = `Hi sir, I want to use the service. Here are my details:
+   Hi Vikas ji ! I am interested in your services. Here are my details:
 - Name: ${name}
 - Email: ${email}
 - Phone: ${phone}
@@ -121,7 +122,7 @@ const Bookconsulation: React.FC = () => {
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
     // Open WhatsApp with the message
-    window.open(`https://wa.me/7880652040?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/8556966753?text=${encodedMessage}`, '_blank');
   };
 
   return (
