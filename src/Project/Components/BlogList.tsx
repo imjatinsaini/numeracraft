@@ -1,0 +1,57 @@
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+const blogs = [
+  {
+    id: 1,
+    title: 'What is Vastu Shastra?',
+    description: 'Vastu Shastra is an ancient Indian architectural system that aims to create a harmonious living space...',
+    image: '/assets/blog1.png',
+  },
+  {
+    id: 2,
+    title: 'What is Astrology?',
+    description: 'Astrology is the study of celestial objects and their influence on human lives...',
+    image: '/assets/blog2.png',
+  },
+  {
+    id: 3,
+    title: 'What is Numerology?',
+    description: 'Numerology is the study of numbers and their symbolic meanings...',
+    image: '/assets/blog3.png',
+  },
+];
+
+const BlogList = () => {
+  return (
+    <div className="bg-[#F9EDB5] p-10">
+      <h1 className="text-center md:text-5xl text-3xl font-serif mb-10 text-[#333]">BLOGS</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        {blogs.map((blog) => (
+          <motion.div
+            key={blog.id} // Unique key prop applied to the root element
+            className="rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300"
+            whileHover={{ scale: 1.02 }}
+          >
+            <Link to={`/blog/${blog.id}`} className="block">
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-xl font-semibold mb-2 text-gray-800">{blog.title}</h2>
+                <p className="text-gray-600 text-sm mb-4">{blog.description}</p>
+                <span className="text-red-500 font-medium hover:underline">
+                  Read More
+                </span>
+              </div>
+            </Link>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default BlogList;
