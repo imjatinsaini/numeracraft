@@ -151,7 +151,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-opacity-80 bg-red-600 shadow-2xl' : ''
+        isScrolled ? 'bg-opacity-80 bg-red-900 shadow-2xl' : ''
       }`}
     >
       {/* Navbar */}

@@ -110,8 +110,7 @@ const Bookconsulation: React.FC = () => {
     const { name, email, phone, service, message } = formData;
 
     // Construct the WhatsApp message
-    const whatsappMessage = `Hi sir, I want to use the service. Here are my details:
-   Hi Vikas ji ! I am interested in your services. Here are my details:
+    const whatsappMessage = `Hi Vikas ji ! I am interested in your services. Here are my details:
 - Name: ${name}
 - Email: ${email}
 - Phone: ${phone}
