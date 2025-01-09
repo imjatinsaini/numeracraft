@@ -162,7 +162,7 @@
 // export default Footer;
 
 
-import { Facebook, Instagram, LinkedIn, WhatsApp, YouTube } from '@material-ui/icons';
+import { Facebook, Instagram, WhatsApp, YouTube } from '@material-ui/icons';
 import React from 'react';
 import "tailwindcss/tailwind.css";
 
@@ -229,7 +229,7 @@ const Footer: React.FC = () => {
             <div className='text-[#CEB256] text-2xl font-serif text-center mb-2 '>Stay in touch </div>
             <div className="flex gap-6  ">
               <a
-                href="https://www.instagram.com/your-profile"
+                href="https://www.instagram.com/thenumeracraft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
@@ -237,7 +237,7 @@ const Footer: React.FC = () => {
                 <Instagram />
               </a>
               <a
-                href="https://www.facebook.com/your-profile"
+                href="https://www.facebook.com/share/1VzQfyRSA6/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
@@ -245,7 +245,7 @@ const Footer: React.FC = () => {
                 <Facebook />
               </a>
               <a
-                href="https://www.youtube.com/your-channel"
+                href="https://youtube.com/@thenumeracraft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
@@ -253,15 +253,15 @@ const Footer: React.FC = () => {
                 <YouTube />
               </a>
               <a
-                href="https://www.linkedin.com/in/your-profile"
+                href="https://www.threads.net/@thenumeracraft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <LinkedIn />
+                <img src="/assets/threadlogo.png" alt="threads" className="w-6 h-6" />
               </a>
               <a
-                href="https://wa.me/8556966753"
+                href="https://whatsapp.com/channel/0029VadvIiAHgZWkaARi7d2H"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
