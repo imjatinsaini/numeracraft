@@ -172,19 +172,19 @@ const Footer: React.FC = () => {
       {/* Contact Us Details - Web View */}
       <div className="hidden lg:block py-8">
         <div className="max-w-6xl mx-auto grid grid-cols-4 gap-8">
-          <div className="text-center">
-            <h3 className="font-bold text-xl text-white mb-2">ADDRESS</h3>
+          <div className="text-start">
+            <h3 className="font-bold text-xl  text-white mb-2">ADDRESS</h3>
             <p>#2646B, Sector 70, SAS Nagar, Mohali, 160071</p>
           </div>
-          <div className="text-center">
+          <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">EMAIL</h3>
             <p>thenumeracraft@gmail.com</p>
           </div>
-          <div className="text-center">
+          <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">PHONE NO.</h3>
             <p>+91 78372 65616</p>
           </div>
-          <div className="text-center">
+          <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">WEBSITE</h3>
             <p>www.thenumeracraft.com</p>
           </div>
@@ -218,19 +218,21 @@ const Footer: React.FC = () => {
           style={{ backgroundImage: "url('/assets/webfooterbg.png')", width: "100%", height: "100%" }}
         >
           <div className="max-w-6xl mx-auto flex space-y-5 flex-col justify-between items-center">
-            <nav className="flex gap-4 md:gap-8 mb-6 lg:mb-0">
+            <nav className="flex gap-4 md:gap-8  lg:mb-0">
               <a href="#home" className="text-white hover:text-yellow-300 hover:scale-105 transition-transform">Home</a>
               <a href="#about" className="text-white hover:text-yellow-300 hover:scale-105 transition-transform">About</a>
               <a href="#services" className="text-white hover:text-yellow-300 hover:scale-105 transition-transform">Services</a>
               <a href="#blogs" className="text-white hover:text-yellow-300 hover:scale-105 transition-transform">Blogs</a>
               <a href="#contact" className="text-white hover:text-yellow-300 hover:scale-105 transition-transform">Contact Us</a>
             </nav>
-            <div className="flex gap-6">
+            <div>
+            <div className='text-[#CEB256] text-2xl font-serif text-center mb-2 '>Stay in touch </div>
+            <div className="flex gap-6  ">
               <a
                 href="https://www.instagram.com/your-profile"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"
+                className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
                 <Instagram />
               </a>
@@ -238,7 +240,7 @@ const Footer: React.FC = () => {
                 href="https://www.facebook.com/your-profile"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"
+                className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
                 <Facebook />
               </a>
@@ -246,7 +248,7 @@ const Footer: React.FC = () => {
                 href="https://www.youtube.com/your-channel"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"
+                className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
                 <YouTube />
               </a>
@@ -254,7 +256,7 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/your-profile"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"
+                className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
                 <LinkedIn />
               </a>
@@ -262,10 +264,11 @@ const Footer: React.FC = () => {
                 href="https://wa.me/8556966753"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 hover:scale-105 transition-transform"
+                className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
                 <WhatsApp />
               </a>
+            </div>
             </div>
           </div>
         </div>

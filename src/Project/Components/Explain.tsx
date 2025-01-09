@@ -65,18 +65,18 @@ const Explain: React.FC = () => {
       <div className="hidden lg:flex justify-between items-center mx-auto max-w-6xl">
         {/* Left Side Text */}
         <div className="w-2/3 pr-8 relative">
-          <div className="absolute left-0 top-0 h-full border-l-2 border-red-500"></div>
-          <h2 className="text-4xl mb-4 pl-4">Unlock the Power of Numerology, Astrology, and Vastu</h2>
+          <div className="absolute -left-4 top-0  h-full border-l-2 border-red-500"></div>
+          <h2 className="text-4xl mb-4 font-serif pt-4  pl-4">Unlock the Power of Numerology, Astrology, and Vastu</h2>
           <p className="text-sm mb-6 pl-4">
             Are you seeking harmony, prosperity, and balance in your life? At <span className="font-bold">The Numera Craft</span>, we combine the ancient sciences of Numerology, Astrology, and Vastu Shastra to help you unlock the potential of your personal and professional spaces.
           </p>
-          <h3 className="text-4xl mb-2 pl-4">Why Choose Us?</h3>
+          <h3 className="text-4xl font-serif mb-2 pl-4">Why Choose Us?</h3>
           <ul className="list-disc text-sm list-inside mb-4 pl-4">
             <li><span className="font-bold">Expert Guidance:</span> Our experienced consultants offer personalized solutions tailored to your unique needs.</li>
             <li><span className="font-bold">Holistic Approach:</span> We integrate Numerology and Vastu to provide comprehensive support for your goals.</li>
             <li><span className="font-bold">Proven Results:</span> Hundreds of satisfied clients have transformed their lives with our consultations.</li>
           </ul>
-          <h3 className="text-2xl mb-2 pl-4">How It Works</h3>
+          <h3 className="text-4xl font-serif  mb-2 pl-4">How It Works</h3>
           <ol className="list-decimal text-sm list-inside pl-4">
             <li>Initial Consultation: Share your concerns and objectives with us.</li>
             <li>Customized Analysis: Receive a detailed report based on your Numerology and Vastu assessments.</li>
@@ -86,7 +86,7 @@ const Explain: React.FC = () => {
           {/* Updated Button */}
           <a
             href="#book-consultation"
-            className="mt-6 px-6 py-2 bg-red-500 text-white font-serif rounded-full ml-4 inline-block text-center"
+            className="mt-6 px-6 py-2 mb-4 bg-[#B81626] text-base text-white font-serif rounded-full ml-4 inline-block text-center"
           >
             Book A Consultation
           </a>
@@ -113,7 +113,7 @@ const Explain: React.FC = () => {
           {/* Updated Button */}
           <a
             href="#book-consultation"
-            className="mt-6 px-6 py-2 bg-red-500 text-white font-serif rounded-full inline-block text-center"
+            className="mt-6 px-6 py-2 bg-[#B81626] text-white font-serif rounded-full inline-block text-center"
           >
             Book A Consultation
           </a>

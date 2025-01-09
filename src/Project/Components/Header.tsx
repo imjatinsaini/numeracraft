@@ -156,11 +156,11 @@ const Header: React.FC = () => {
     >
       {/* Navbar */}
       <div className="flex justify-between items-center p-4 text-white">
-        <a href="#home">
+        <a href="#home" className='ms-[10%]'>
           <img
             src="/assets/numeracraftlogo.png"
             alt="Numeracraft Logo"
-            className="w-[40%] sm:w-[20%] ms-[10%] md:w-[20%]"
+            className="w-[40%] sm:w-[20%]  md:w-[20%]"
           />
         </a>
         <button className="lg:hidden" onClick={toggleDrawer}>

@@ -584,7 +584,8 @@ const Services: React.FC = () => {
             <motion.div
               key={service}
               whileHover={{ scale: 1.1 }}
-              className="relative bg-gradient-to-r from-red-800 via-red-700 to-red-500 p-6 py-8 rounded-lg text-center cursor-pointer"
+              className="relative p-4 rounded-lg text-center cursor-pointer" 
+     style={{ background: 'radial-gradient(circle, #EF4444 0%, #991B1B 100%)' }}
               onClick={() => setSelectedService(service)}
             >
               <motion.img
@@ -608,7 +609,8 @@ const Services: React.FC = () => {
             <motion.div
               key={service}
               whileHover={{ scale: 1.05 }}
-              className="relative bg-gradient-to-r from-red-800 via-red-700 to-red-500 p-4 rounded-lg text-center cursor-pointer"
+              className="relative p-4 rounded-lg text-center cursor-pointer" 
+              style={{ background: 'radial-gradient(circle, #EF4444 0%, #991B1B 100%)' }}
               onClick={() => setSelectedService(service)}
             >
               <motion.img
@@ -640,7 +642,7 @@ const Services: React.FC = () => {
             {/* Updated Button with Auto-Close */}
             <button
               onClick={handleBookConsultation}
-              className="px-6 py-2 bg-red-500 text-white rounded-full"
+              className="px-6 py-2 bg-[#A51420] text-white rounded-full"
             >
               Book A Consultation
             </button>
