@@ -216,7 +216,7 @@ const Astrology = () => {
         {/* Cross Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-2 text-red-700 text-2xl font-bold hover:text-red-900"
+          className="absolute top-1 right-2  p-4  text-red-700 text-4xl font-bold hover:text-red-900"
         >
           ×
         </button>

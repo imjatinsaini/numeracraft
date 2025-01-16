@@ -839,7 +839,7 @@ const Services: React.FC = () => {
             <div className="text-lg mb-6">{serviceData[selectedService].content}</div>
 
             {/* Buttons */}
-            <div className="flex justify-start space-x-4">
+            <div className="flex flex-wrap justify-start gap-4 ">
               <button
                 onClick={handleBookConsultation}
                 className="px-6 py-2 bg-[#A51420] font-serif text-white rounded-full"
