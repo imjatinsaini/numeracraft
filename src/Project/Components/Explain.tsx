@@ -60,24 +60,24 @@ import "tailwindcss/tailwind.css";
 
 const Explain: React.FC = () => {
   return (
-    <div className="relative bg-[#FFF8D9] text-gray-800 py-12">
+    <div className="relative bg-[#FFF8D9] text-gray-800 py-0 md:py-12">
       {/* Web View */}
       <div className="hidden lg:flex justify-between items-center mx-auto max-w-6xl">
         {/* Left Side Text */}
         <div className="w-2/3 pr-8 relative">
           <div className="absolute -left-4 top-0  h-full border-l-2 border-red-500"></div>
           <h2 className="text-4xl mb-4 font-serif pt-4  pl-4">Unlock the Power of Numerology, Astrology, and Vastu</h2>
-          <p className="text-sm mb-6 pl-4">
+          <p className="text-base mb-6 pl-4">
             Are you seeking harmony, prosperity, and balance in your life? At <span className="font-bold">The Numera Craft</span>, we combine the ancient sciences of Numerology, Astrology, and Vastu Shastra to help you unlock the potential of your personal and professional spaces.
           </p>
           <h3 className="text-4xl font-serif mb-2 pl-4">Why Choose Us?</h3>
-          <ul className="list-disc text-sm list-inside mb-4 pl-4">
+          <ul className="list-disc text-base list-inside mb-4 pl-4">
             <li><span className="font-bold">Expert Guidance:</span> Our experienced consultants offer personalized solutions tailored to your unique needs.</li>
             <li><span className="font-bold">Holistic Approach:</span> We integrate Numerology and Vastu to provide comprehensive support for your goals.</li>
             <li><span className="font-bold">Proven Results:</span> Hundreds of satisfied clients have transformed their lives with our consultations.</li>
           </ul>
           <h3 className="text-4xl font-serif  mb-2 pl-4">How It Works</h3>
-          <ol className="list-decimal text-sm list-inside pl-4">
+          <ol className="list-decimal text-base list-inside pl-4">
             <li>Initial Consultation: Share your concerns and objectives with us.</li>
             <li>Customized Analysis: Receive a detailed report based on your Numerology and Vastu assessments.</li>
             <li>Actionable Solutions: Implement our practical and effective recommendations.</li>

@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Footer from './Footer';
+import Header2 from './Header2';
 
 const blogs = [
     {
@@ -65,10 +66,10 @@ const BlogDetail = () => {
     if (!blog) return <div className="text-center text-2xl mt-20">Blog not found!</div>;
 
     return (
-        <>
-      
+        < >
+      <Header2/>
         <motion.div
-            className="p-[7%]  bg-[#fdf5e6] min-h-screen"
+            className="p-[7%] mt-24 sm:mt-14 md:mt-12 lg:mt-8 xl:mt-8   bg-[#fdf5e6] min-h-screen"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
