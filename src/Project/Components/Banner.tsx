@@ -235,6 +235,9 @@
 
 
 
+
+
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -320,7 +323,7 @@ const Banner: React.FC = () => {
           Book A Consultation
         </a>
       </motion.div>
-
+      
       {/* Overlay Images */}
       <motion.img
         src="/assets/bannerbgcircle1.png"
@@ -341,5 +344,3 @@ const Banner: React.FC = () => {
 };
 
 export default Banner;
-
-

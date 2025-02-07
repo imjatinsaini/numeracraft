@@ -320,7 +320,7 @@ const Bookconsultation: React.FC = () => {
     const { name, email, phone, service, message } = formData;
 
     // Construct the WhatsApp message
-    const whatsappMessage = `Hello , Team The Numeracraft! I am interested in your services. Here are my details:
+    const whatsappMessage = `Hello , Team "The Numeracraft" ! I am interested in your services. Here are my details:
 - Name: ${name}
 - Email: ${email}
 - Phone: ${phone}
@@ -514,6 +514,19 @@ const Bookconsultation: React.FC = () => {
               </button>
             </form>
           </div>
+          <div
+  className="text-center text-xl mx-[%] mt-8 p-6 rounded-lg"
+  style={{
+    backgroundImage: "url('/assets/back.png')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }}
+>
+  <p>
+    Discover the science behind your success with The Numera Craft. Unlock your true potential today!
+  </p>
+</div>
         </div>
       </div>
     </div>

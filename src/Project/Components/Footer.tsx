@@ -179,7 +179,8 @@ const Footer: React.FC = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-4 gap-8">
           <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">ADDRESS</h3>
-            <p className="font-bold">#2646B, Sector 70, SAS Nagar, Mohali, 160071</p>
+            <p className="font-bold"> SAS Nagar,Mohali,Punjab 160071</p>
+            <p className="font-bold">Sector 19, Chandigarh 160019</p>
           </div>
           <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">EMAIL</h3>
@@ -201,6 +202,7 @@ const Footer: React.FC = () => {
         <div className="mb-6">
           <h3 className="font-bold text-xl mb-2">ADDRESS</h3>
           <p>#2646B, Sector 70, SAS Nagar, Mohali, 160071</p>
+ 
         </div>
         <div className="mb-6">
           <h3 className="font-bold text-xl mb-2">PHONE NO.</h3>

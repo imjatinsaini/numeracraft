@@ -848,7 +848,7 @@ const Services: React.FC = () => {
               </button>
               <button
                 onClick={handleReadMore}
-                className="px-6 py-2 bg-[#A51420] font-serif text-white rounded-full"
+                className="px-6 py-2 bg-[#8A491C] font-serif text-white rounded-full"
               >
                 Read More
               </button>
