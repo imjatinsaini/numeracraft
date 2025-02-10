@@ -182,6 +182,7 @@ const Footer: React.FC = () => {
             <p className="font-bold"> SAS Nagar,Mohali,Punjab 160071</p>
             <p className="font-bold">Sector 19, Chandigarh 160019</p>
           </div>
+      
           <div className="text-start">
             <h3 className="font-bold text-xl text-white mb-2">EMAIL</h3>
             <p className="font-bold">thenumeracraft@gmail.com</p>
@@ -202,6 +203,7 @@ const Footer: React.FC = () => {
         <div className="mb-6">
           <h3 className="font-bold text-xl mb-2">ADDRESS</h3>
           <p>#2646B, Sector 70, SAS Nagar, Mohali, 160071</p>
+          <p className="">Sector 19, Chandigarh 160019</p>
  
         </div>
         <div className="mb-6">
@@ -305,6 +307,9 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='text-center text-white bg-[#D7A659] py-2'>
+        ALL Right reserved 2025 @Numeracraft
       </div>
     </div>
   );

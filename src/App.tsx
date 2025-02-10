@@ -66,3 +66,9 @@ const App = () => {
 
 export default App;
 
+
+
+// google text shown 
+// image compress
+// image download disabled 
+// solar system best one 
