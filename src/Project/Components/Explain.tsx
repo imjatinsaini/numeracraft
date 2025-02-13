@@ -94,7 +94,8 @@ const Explain: React.FC = () => {
 
         {/* Right Side Image */}
         <div className="w-1/3">
-          <img src="/assets/numerology.png" alt="Numerology Diagram" className="w-full h-auto object-cover" />
+          <img src="/assets/numerology.png" alt="Numerology Diagram" className="w-full h-auto object-cover" onContextMenu={(e) => e.preventDefault()}
+        draggable="false" />
         </div>
       </div>
 

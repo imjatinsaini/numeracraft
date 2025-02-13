@@ -81,6 +81,8 @@ const BlogDetail = () => {
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.6 }}
+                onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
             />
             <motion.h1
                 className="text-5xl font-bold mt-6 text-gray-800"

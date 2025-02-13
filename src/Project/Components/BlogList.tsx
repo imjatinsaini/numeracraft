@@ -27,7 +27,8 @@ const BlogList = () => {
     <div className="bg-[#F9EDB5]   md:p-10 p-8">
       <h1 className="text-center md:text-5xl text-3xl font-serif md:mb-2 mb-0 text-[#333]">BLOGS</h1>
       <div className="text-2xl font-serif text-center items-center  justify-center md:mb-10 mb-6 flex  ">
-          <img src="/assets/redline.png" alt="lineheading" className="w-[40%] sm:w-[20%]  md:w-[20%]" />
+          <img src="/assets/redline.png" alt="lineheading" className="w-[40%] sm:w-[20%]  md:w-[20%]" onContextMenu={(e) => e.preventDefault()}
+        draggable="false" />
         </div>
       <div className="grid grid-cols-1 md:grid-cols-3 md:mx-[10%]  mx-[0%] gap-6 md:gap-10">
         {blogs.map((blog) => (
@@ -41,6 +42,8 @@ const BlogList = () => {
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-48 object-cover "
+                onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2 font-serif text-gray-800">{blog.title}</h2>

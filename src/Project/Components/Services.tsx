@@ -793,6 +793,8 @@ const Services: React.FC = () => {
                 src={`/assets/${service.toLowerCase().replace(/ /g, '')}service.png`}
                 alt={service}
                 className="mx-auto w-[50%] mb-4"
+                onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
               />
               <h3 className="text-xl font-semibold text-white">{service}</h3>
             </motion.div>
@@ -818,6 +820,8 @@ const Services: React.FC = () => {
                 src={`/assets/${service.toLowerCase().replace(/ /g, '')}service.png`}
                 alt={service}
                 className="mx-auto w-[60%] mb-2"
+                onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
               />
               <h3 className="text-lg font-semibold text-white">{service}</h3>
             </motion.div>

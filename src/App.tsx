@@ -65,10 +65,11 @@ const App = () => {
 };
 
 export default App;
+ 
 
-
-
-// google text shown 
+  
+// google text shown --done
 // image compress
-// image download disabled 
+// image download disabled --done
 // solar system best one 
+// google analytics section 

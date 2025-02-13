@@ -66,6 +66,8 @@ const Header2: React.FC = () => {
             src="/assets/numeracraftlogo.png"
             alt="Numeracraft Logo"
             className="w-[40%] sm:w-[20%] md:w-[25%]"
+            onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
           />
         </Link>
         <button className="lg:hidden" onClick={toggleDrawer}>

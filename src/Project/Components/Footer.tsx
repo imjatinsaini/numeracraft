@@ -270,7 +270,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <img src="/assets/insta.png" alt="Instagram" className="md:w-10 md:h-10 w-6 h-6" />
+                <img src="/assets/insta.png" alt="Instagram" className="md:w-10 md:h-10 w-6 h-6" onContextMenu={(e) => e.preventDefault()}
+        draggable="false"/>
               </a>
               <a
                 href="https://www.facebook.com/share/1VzQfyRSA6/"
@@ -278,7 +279,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <img src="/assets/facebook.png" alt="Facebook" className="md:w-10 md:h-10 w-6 h-6" />
+                <img src="/assets/facebook.png" alt="Facebook" className="md:w-10 md:h-10 w-6 h-6" onContextMenu={(e) => e.preventDefault()}
+        draggable="false"/>
               </a>
               <a
                 href="https://youtube.com/@thenumeracraft"
@@ -286,7 +288,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <img src="/assets/youtube.png" alt="YouTube" className="md:w-10 md:h-10 w-6 h-6" />
+                <img src="/assets/youtube.png" alt="YouTube" className="md:w-10 md:h-10 w-6 h-6" onContextMenu={(e) => e.preventDefault()}
+        draggable="false" />
               </a>
               <a
                 href="https://www.threads.net/@thenumeracraft"
@@ -294,7 +297,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <img src="/assets/threadlogo.png" alt="Threads" className="md:w-10 md:h-10 w-6 h-6" />
+                <img src="/assets/threadlogo.png" alt="Threads" className="md:w-10 md:h-10 w-6 h-6" onContextMenu={(e) => e.preventDefault()}
+        draggable="false"/>
               </a>
               <a
                 href="https://whatsapp.com/channel/0029VadvIiAHgZWkaARi7d2H"
@@ -302,7 +306,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-[#CEB256] hover:text-yellow-300 hover:scale-105 transition-transform"
               >
-                <img src="/assets/whatsapp.png" alt="WhatsApp" className="md:w-10 md:h-10 w-6 h-6" />
+                <img src="/assets/whatsapp.png" alt="WhatsApp" className="md:w-10 md:h-10 w-6 h-6" onContextMenu={(e) => e.preventDefault()}
+        draggable="false" />
               </a>
             </div>
           </div>

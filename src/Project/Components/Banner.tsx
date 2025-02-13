@@ -238,6 +238,112 @@
 
 
 
+// import React, { useState, useEffect } from 'react';
+// import { motion } from 'framer-motion';
+
+// const Banner: React.FC = () => {
+//   const [stars, setStars] = useState(generateStars(200)); // Default to 200 stars for web
+
+//   // Generate random star positions and sizes
+//   function generateStars(count: number) {
+//     const starsArray = [];
+//     for (let i = 0; i < count; i++) {
+//       starsArray.push({
+//         id: i,
+//         size: Math.random() * 3 + 1, // Random size between 1px and 4px
+//         top: Math.random() * 100, // Random position (percentage)
+//         left: Math.random() * 100, // Random position (percentage)
+//       });
+//     }
+//     return starsArray;
+//   }
+
+//   // Update number of stars based on screen size
+//   useEffect(() => {
+//     const updateStars = () => {
+//       const screenWidth = window.innerWidth;
+//       if (screenWidth < 768) {
+//         // Mobile view
+//         setStars(generateStars(50));
+//       } else {
+//         // Web view
+//         setStars(generateStars(200));
+//       }
+//     };
+
+//     updateStars(); // Set stars on initial render
+//     window.addEventListener('resize', updateStars); // Adjust stars on screen resize
+
+//     return () => {
+//       window.removeEventListener('resize', updateStars); // Cleanup event listener
+//     };
+//   }, []);
+
+//   return (
+//     <div
+//       className="relative h-[300px] md:h-[500px] flex items-center bg-cover bg-center text-white"
+//       style={{ backgroundImage: "url('/assets/bannerbg.png')" }}
+//     >
+//       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40"></div>
+
+//       {/* Animated stars */}
+//       {stars.map((star) => (
+//         <motion.div
+//           key={star.id}
+//           className="absolute bg-white rounded-full"
+//           style={{
+//             width: `${star.size}px`,
+//             height: `${star.size}px`,
+//             top: `${star.top}%`,
+//             left: `${star.left}%`,
+//             boxShadow: "0 0 6px 2px rgba(255, 255, 255, 0.8)",
+//           }}
+//           animate={{ opacity: [0.1, 1, 0.1] }}
+//           transition={{
+//             duration: Math.random() * 3 + 2, // Random duration between 2s and 5s
+//             repeat: Infinity,
+//             ease: "easeInOut",
+//           }}
+//         />
+//       ))}
+
+//       <motion.div
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1 }}
+//         className="relative z-10"
+//         style={{ marginLeft: "10%", marginTop: "5%" }}
+//       >
+//         <h1 className="md:text-4xl text-xl mt-[20%] md:mt-[0%] text-orange-300 font-bold">Welcome to</h1>
+//         <h1 className="md:text-6xl text-4xl font-serif">The Numera Craft</h1>
+//          <h1 className="md:text-4xl text-2xl font-serif">Numerology Vastu Consultant</h1>
+       
+//       </motion.div>
+      
+//       {/* Overlay Images */}
+//       <motion.img
+//         src="/assets/bannerbgcircle1.png"
+//         alt="Circle 1"
+//         className="absolute top-[3%] right-[17%] w-[35%] md:w-[15%] object-cover"
+//         animate={{ rotate: 360 }}
+        
+//         transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+//       />
+//       <motion.img
+//         src="/assets/bannerbgcircle2.png"
+//         onContextMenu="return false;" 
+//         alt="Circle 2"
+//         className="absolute top-[35%] right-[10%] w-[35%] md:w-[15%] object-cover"
+//         animate={{ rotate: -360 }}
+//         transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+//       />
+//     </div>
+//   );
+// };
+
+// export default Banner;
+
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -279,6 +385,21 @@ const Banner: React.FC = () => {
     };
   }, []);
 
+  // Disable right-click globally for images
+  useEffect(() => {
+    const disableRightClick = (e: MouseEvent) => {
+      if ((e.target as HTMLElement).tagName === "IMG") {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener("contextmenu", disableRightClick);
+
+    return () => {
+      document.removeEventListener("contextmenu", disableRightClick);
+    };
+  }, []);
+
   return (
     <div
       className="relative h-[300px] md:h-[500px] flex items-center bg-cover bg-center text-white"
@@ -316,8 +437,7 @@ const Banner: React.FC = () => {
       >
         <h1 className="md:text-4xl text-xl mt-[20%] md:mt-[0%] text-orange-300 font-bold">Welcome to</h1>
         <h1 className="md:text-6xl text-4xl font-serif">The Numera Craft</h1>
-         <h1 className="md:text-4xl text-2xl font-serif">Numerology Vastu Consultant</h1>
-       
+        <h1 className="md:text-4xl text-2xl font-serif">Numerology Vastu Consultant</h1>
       </motion.div>
       
       {/* Overlay Images */}
@@ -327,6 +447,8 @@ const Banner: React.FC = () => {
         className="absolute top-[3%] right-[17%] w-[35%] md:w-[15%] object-cover"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+        onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
       />
       <motion.img
         src="/assets/bannerbgcircle2.png"
@@ -334,6 +456,8 @@ const Banner: React.FC = () => {
         className="absolute top-[35%] right-[10%] w-[35%] md:w-[15%] object-cover"
         animate={{ rotate: -360 }}
         transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+        onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
       />
     </div>
   );

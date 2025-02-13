@@ -350,7 +350,8 @@ const Bookconsultation: React.FC = () => {
         </p>
         <div className="bg-[#F9EDB5] shadow p-8 rounded-3xl max-w-3xl mx-auto relative">
           <div className="text-2xl font-serif text-center items-center justify-center flex">
-            <img src="/assets/lineheading.png" alt="lineheading" className="w-[40%] sm:w-[20%] md:w-[30%]" />
+            <img src="/assets/lineheading.png" alt="lineheading" className="w-[40%] sm:w-[20%] md:w-[30%] "  onContextMenu={(e) => e.preventDefault()}
+        draggable="false"/>
           </div>
           <h3 className="text-2xl font-serif text-center mb-6">Interested In Discussing?</h3>
           <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-6">
@@ -450,6 +451,8 @@ const Bookconsultation: React.FC = () => {
                 src="/assets/lineheading.png"
                 alt="lineheading"
                 className="w-[40%] sm:w-[30%] mx-auto"
+                onContextMenu={(e) => e.preventDefault()}
+        draggable="false"
               />
             </div>
             <h3 className="text-xl font-serif text-center mb-4">Interested In Discussing?</h3>
