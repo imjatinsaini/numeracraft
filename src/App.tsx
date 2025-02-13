@@ -67,9 +67,9 @@ const App = () => {
 export default App;
  
 
-  
-// google text shown --done
-// image compress
-// image download disabled --done
 // solar system best one 
-// google analytics section --
+// image compress 
+// google text shown --done
+// image download disabled --done
+// google analytics section --done
+// sitemap --done
