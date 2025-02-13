@@ -425,7 +425,7 @@ const Banner: React.FC = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-        />
+        /> 
       ))}
 
       <motion.div
@@ -435,9 +435,9 @@ const Banner: React.FC = () => {
         className="relative z-10"
         style={{ marginLeft: "10%", marginTop: "5%" }}
       >
-        <h1 className="md:text-4xl text-xl mt-[20%] md:mt-[0%] text-orange-300 font-bold">Welcome to</h1>
+        <h1 className="md:text-4xl text-xl mt-[20%] md:mt-[0%] text-orange-400 font-bold">Welcome to</h1>
         <h1 className="md:text-6xl text-4xl font-serif">The Numera Craft</h1>
-        <h1 className="md:text-4xl text-2xl font-serif">Numerology Vastu Consultant</h1>
+        <h1 className="md:text-4xl text-xl font-serif">Numerology Vastu Consultant</h1>
       </motion.div>
       
       {/* Overlay Images */}
